@@ -41,7 +41,6 @@ Route::post('book_call',[
 ]);
 
 // **********   WEBDESIGN ROUTES *********//
-
 Route::get('website-design', ['as' => 'websiteDesign', function () {
     return view('website_design');
 }]);
@@ -98,9 +97,6 @@ Route::get('unlettered', ['as' => 'unlettered', function () {
 Route::get('amira-contracting', ['as' => 'amira-contracting', function () {
     return view('case-studies.amira-contracting');
 }]);
-
-
-
 
 Route::get('alexander-law', ['as' => 'alexander-law', function () {
     return view('case-studies.alexander-law');
@@ -573,5 +569,5 @@ Route::group(['middleware' => 'auth'], function () {
 
     });
 });
-
+ 
 
